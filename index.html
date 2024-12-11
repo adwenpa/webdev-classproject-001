@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Quote Page</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Quote Page</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
     <div class="main">
-
         <div class="container">
-
-            <div class="">
-
-                <p>Dude, suckin at something is the first step at being sorta good at something.</p>
-                <p>Jacob "Jake" the Dog, Sr.</p>
-
+            <div class="quote-box">
+                <p class="left-quote">&ldquo;</p>
+                <p id="quote">
+                    So in everything, do to others what you would have them do to you,
+                    for this sums up the Law and the Prophets.
+                </p>
+                <p id="author">Jesus Christ</p>
+                <p class="right-quote">&rdquo;</p>
+                <button type="button"
+                    onclick='document.getElementById("quote").innerHTML = "Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own."'>
+                    Another Quote!
+                </button>
             </div>
-
         </div>
-    
     </div>
 
 </body>
+
 </html>

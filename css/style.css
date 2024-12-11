@@ -30,6 +30,7 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.6;
 	margin: 0 0 1.6rem;
+	text-align: center;
 }
 
 a {
@@ -49,13 +50,37 @@ hr {
 	border-color: #555555;
 }
 
+button {
+	color: white;
+}
 /* Layout */
 
 .container {
-	padding: 0;
+	padding: 20px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1000px;
+	background-color: purple;
+	background-image: radial-gradient(black, purple);
+	
+}
+
+.quote-box {
+	color: white;
+	padding: 2rem;
+	outline-style: solid;
+	outline-color: white;
+	outline-width: 2px;
+}
+
+.right-quote {
+	text-align: right;
+	font-size:100px;
+}
+
+.left-quote {
+	text-align: left;
+	font-size:100px;
 }
 
 /* Media Queries */
@@ -64,11 +89,21 @@ hr {
 
 	/* CSS HERE */
 
+	.container {
+		width: 699px;
+		margin: auto;
+	}
+
 }
 
 /* Desktop Media Query */
 @media (min-width: 999px) {
 
 	/* CSS HERE */
+
+	.container {
+		width: 999px;
+		margin: auto;
+	}
 
 }
