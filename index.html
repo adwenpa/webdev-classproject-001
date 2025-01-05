@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Quote Page</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css ">
+   
+    <script src="./js/app.js" defer></script>
+
 </head>
 
 <body>
-    <div class="main">
-        <div class="container">
-            <div class="quote-box">
-                <p class="left-quote">&ldquo;</p>
-                <p id="quote">
-                    So in everything, do to others what you would have them do to you,
-                    for this sums up the Law and the Prophets.
-                </p>
-                <p id="author">Jesus Christ</p>
-                <p class="right-quote">&rdquo;</p>
-                <button type="button"
-                    onclick='document.getElementById("quote").innerHTML = "Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own."'>
-                    Another Quote!
-                </button>
-            </div>
-        </div>
-    </div>
+
+    <main class="main">
+        <section class="container">
+            <h1>Click for the next quote</h1>
+
+            <article class="quote-card">
+                <p class="left-double-quote">&ldquo;</p>
+                <p class="quote">Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets.</p>
+                <p class="right-double-quote">&rdquo;</p>
+                <p class="author">Jesus Christ</p>
+
+            </article>
+        </section>
+    
+    </main>
 
 </body>
-
 </html>

@@ -1,5 +1,9 @@
 @import url("reset.css");
 
+/*
+Only made changes to the layout and media queries
+*/
+
 html {
 	padding: 0;
 	margin: 0;
@@ -30,7 +34,6 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 1.6;
 	margin: 0 0 1.6rem;
-	text-align: center;
 }
 
 a {
@@ -50,48 +53,79 @@ hr {
 	border-color: #555555;
 }
 
-button {
-	color: white;
-}
+
+
+
 /* Layout */
 
+
+.main {
+	background-color: bisque;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
 .container {
-	padding: 20px;
+	display: grid;
+	place-items: center;
+	padding: 1.5em;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1000px;
-	background-color: purple;
-	background-image: radial-gradient(black, purple);
-	
+	border: 4px solid black;
 }
 
-.quote-box {
-	color: white;
-	padding: 2rem;
-	outline-style: solid;
-	outline-color: white;
-	outline-width: 2px;
+.quote-card {	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;  
+	max-width: 500px;
+	padding: 35px;  
+	border: 1px solid rgba(255, 255, 255, .25);
+	border-radius: 20px;
+	color: #ff9500;
+	background-color: #00539f;
 }
 
-.right-quote {
+.quote {
+	font-size: 2em;
+}
+
+.author {
+	font-size: 1.4em;
 	text-align: right;
-	font-size:100px;
 }
 
-.left-quote {
-	text-align: left;
-	font-size:100px;
+.left-double-quote,
+.right-double-quote {
+	font-size: 6em;
 }
+
+.right-double-quote {
+	text-align: right;
+}
+
+
+
 
 /* Media Queries */
 
 @media (min-width: 699px) {
 
 	/* CSS HERE */
+	.quote-card {
+		min-width: 600px;
+	}
 
-	.container {
-		width: 699px;
-		margin: auto;
+	.quote {
+		font-size: 2.5em;
+	}
+	
+	.author {
+		font-size: 1.6em;
 	}
 
 }
@@ -100,10 +134,16 @@ button {
 @media (min-width: 999px) {
 
 	/* CSS HERE */
+	.quote-card {
+		min-width: 900px;
+	}
 
-	.container {
-		width: 999px;
-		margin: auto;
+	.quote {
+		font-size: 3em;
+	}
+	
+	.author {
+		font-size: 2em;
 	}
 
 }
